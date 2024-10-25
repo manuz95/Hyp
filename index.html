@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsanti di Download</title>
+    <style>
+        body {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Stile per i vari pulsanti neon */
+        .button-cyan {
+            background-color: #00ffff;
+            box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+        }
+        .button-cyan:hover {
+            box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff, 0 0 90px #00ffff;
+        }
+
+        .button-green {
+            border: 2px solid #00ff00;
+            color: #00ff00;
+            box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 60px #00ff00;
+        }
+        .button-green:hover {
+            box-shadow: 0 0 30px #00ff00, 0 0 60px #00ff00, 0 0 90px #00ff00;
+        }
+
+        .button-magenta {
+            border: 2px solid #ff00ff;
+            color: #ff00ff;
+            box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 60px #ff00ff;
+        }
+        .button-magenta:hover {
+            box-shadow: 0 0 30px #ff00ff, 0 0 60px #ff00ff, 0 0 90px #ff00ff;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="test.jar" class="button button-cyan" download>Download File 1</a>
+    <a href="test.jar" class="button button-green" download>Download File 2</a>
+    <a href="test.jar" class="button button-magenta" download>Download File 3</a>
+
+</body>
+</html>
